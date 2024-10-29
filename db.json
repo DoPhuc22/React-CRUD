@@ -1,0 +1,24 @@
+{
+  "books": [
+    {
+      "bookName": "Romeo and Juliet",
+      "author": "xyz",
+      "release_day": "10-08-2024",
+      "price": "123",
+      "description": null,
+      "status": "inStock",
+      "publisher": "thanhnien",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "bookName": "abc",
+      "author": "xyz"
+    },
+    {
+      "id": "3",
+      "bookName": "abc",
+      "author": "xyz"
+    }
+  ]
+}
