@@ -10,7 +10,10 @@ export default function Homepage(){
       <body>
         <div>
         <Link href={'book'}>
-          <Button type="primary" danger size="large">Click here</Button>
+          <Button type="primary" danger size="large">Click here to admin</Button>
+        </Link>
+        <Link href={'customer'}>
+          <Button type="primary" size="large">Click here to customer</Button>
         </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
