@@ -523,27 +523,12 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.top-3 {
-  top: 0.75rem;
-}
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-.mt-6 {
-  margin-top: 1.5rem;
-}
-.mt-4 {
-  margin-top: 1rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
-}
-.mt-1 {
-  margin-top: 0.25rem;
 }
 .flex {
   display: flex;

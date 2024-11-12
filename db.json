@@ -6,19 +6,32 @@
       "release_day": "10-08-2024",
       "price": "123",
       "description": null,
+      "language": "english",
       "status": "inStock",
       "publisher": "thanhnien",
       "id": "1"
     },
     {
-      "id": "2",
       "bookName": "abc",
-      "author": "xyz"
+      "author": "xyz",
+      "release_day": "11-11-2024",
+      "price": "1000",
+      "description": null,
+      "language": "vietnamese",
+      "status": "inStock",
+      "publisher": "kimdong",
+      "id": "2"
     },
     {
-      "id": "3",
       "bookName": "abc",
-      "author": "xyz"
+      "author": "xyz",
+      "release_day": "11-11-2024",
+      "price": "2000",
+      "description": null,
+      "language": "chinese",
+      "status": "outOfStock",
+      "publisher": "tuoitre",
+      "id": "3"
     }
   ]
 }

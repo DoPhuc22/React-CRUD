@@ -115,15 +115,21 @@ export default function Crud() {
       dataIndex: "description",
       key: "description"
     },
-    {
-      title: "Số trang",
-      dataIndex: "page",
-      key: "page"
-    },
+
     {
       title: "Ngôn ngữ",
       dataIndex: "language",
-      key: "language"
+      key: "language",
+      render: (_, {language}) =>{
+        switch(language){
+          case "vietnamese":
+            return "Tiếng việt";
+          case "english":
+            return "Tiếng anh";
+          case "chinese":
+            return "Tiếng trung";
+        }
+      }
     },
     {
       title: "Trạng thái",
@@ -138,11 +144,11 @@ export default function Crud() {
       render: (_, {publisher}) =>{
             switch(publisher){
               case "kimdong":
-                return "Kim Dong";
+                return "Kim Đồng";
               case "thanhnien":
-                return "Thanh Nien";
+                return "Thanh Niên";
               case "tuoitre":
-                return "Tuoi Tre";
+                return "Tuổi Trẻ";
             }
           }
     },

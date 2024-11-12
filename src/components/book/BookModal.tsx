@@ -130,27 +130,27 @@ const BookModal = ({open, onClose, formType, data, handleReload}: Props) => {
               </Row>
               <Row gutter={24}>
                 <Col span={12}>
-                  <Form.Item<FieldType> label="Full Name" name="bookName" rules={[{required: true}]}>
+                  <Form.Item<FieldType> label="Tên sách" name="bookName" rules={[{required: true}]}>
                     <Input/>
                   </Form.Item>
                 </Col>
                 <Col span={12}>
-                  <Form.Item<FieldType> label="Author Name" name="author" rules={[{required: true}]}>
+                  <Form.Item<FieldType> label="Tên tác giả" name="author" rules={[{required: true}]}>
                     <Input/>
                   </Form.Item>
                 </Col>
                 <Col span={8}>
-                  <Form.Item<FieldType> label="Release date" name="release_day">
+                  <Form.Item<FieldType> label="Ngày xuất bản" name="release_day">
                     <DatePicker format={("DD-MM-YYYY")} placeholder=""></DatePicker>
                   </Form.Item>
                 </Col>
                 <Col span={7}>
-                  <Form.Item label="Price" name="price" rules={[{required: true}]}>
+                  <Form.Item label="Giá sách" name="price" rules={[{required: true}]}>
                     <Input required addonBefore="$"/>
                   </Form.Item>
                 </Col>
                 <Col span={9}>
-                  <Form.Item label="Publisher" name="publisher">
+                  <Form.Item label="Nhà cung cấp" name="publisher">
                     <Select onChange={() => {
                     }} allowClear>
                       <Option value="kimdong">Kim Đồng</Option>
@@ -159,17 +159,17 @@ const BookModal = ({open, onClose, formType, data, handleReload}: Props) => {
                     </Select>
                   </Form.Item>
                 </Col>
-                <Col span={9}>
-                  <Form.Item label="Status" name="status" rules={[{required: true}]}>
+                <Col span={8}>
+                  <Form.Item label="Trạng thái" name="status" rules={[{required: true}]}>
                     <Select onChange={() => {
                     }} allowClear>
-                      <Option value="inStock">Con hang</Option>
-                      <Option value="outOfStock">Het hang</Option>
+                      <Option value="inStock">Còn hàng</Option>
+                      <Option value="outOfStock">Hết hàng</Option>
                     </Select>
                   </Form.Item>
                 </Col>
-                <Col span={9}>
-                  <Form.Item label="Description" name="description">
+                <Col span={8}>
+                  <Form.Item label="Mô tả" name="description">
                     <Switch checked={input}
                             checkedChildren="Input"
                             unCheckedChildren="TextArea"
@@ -179,6 +179,16 @@ const BookModal = ({open, onClose, formType, data, handleReload}: Props) => {
                     ></Switch>
                     <br />
                     {input ? <Input {...sharedProps} /> : <Input.TextArea {...sharedProps} />}
+                  </Form.Item>
+                </Col>
+                <Col span={8}>
+                  <Form.Item label="Ngôn ngữ" name="language" rules={[{required: true}]}>
+                    <Select onChange={() => {
+                    }} allowClear>
+                      <Option value="vietnamese">Tiếng Việt</Option>
+                      <Option value="english">Tiếng Anh</Option>
+                      <Option value="chinese">Tiếng Trung</Option>
+                    </Select>
                   </Form.Item>
                 </Col>
               </Row>
